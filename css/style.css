@@ -1,0 +1,189 @@
+/* start genral css */
+:root {
+  --body-bg-color: #888;
+  --nav-bg-color: #252f31;
+  --resume-bg-color: #f2f2f2;
+  --contact-bg-color: #252f31;
+  --footer-bg-color: #191e22;
+  --color-white: #fff;
+  --main-color: #2ecc71;
+  --secondary-color: #6a6e71;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* end genral css */
+
+/* start header */
+.header .slider {
+  background-color: var(--main-color);
+  height: 600px;
+}
+
+.header .navigation {
+  background-color: var(--nav-bg-color);
+  color: var(--color-white);
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.header .navigation h2 {
+  float: left;
+  text-transform: uppercase;
+}
+.header .navigation h2 span {
+  color: var(--main-color);
+}
+.header .navigation ul {
+  list-style: none;
+  padding-left: 0;
+  float: right;
+}
+.header .navigation ul li {
+  float: left;
+  padding: 10px;
+}
+/* end header */
+
+/* start features */
+.features {
+  overflow: hidden;
+  text-align: center;
+  padding-block: 1.875rem;
+}
+.features .feat {
+  float: left;
+  width: 33.3333%;
+  height: 150px;
+  background-color: #ddd; /* for layout only */
+}
+.features .feat h2 {
+  text-transform: uppercase;
+}
+/* end features */
+
+/* start about */
+.about {
+  overflow: hidden;
+  padding-block: 1.875rem;
+}
+.about .image {
+  float: left;
+  width: 40%;
+}
+.about .info {
+  float: left;
+  width: 60%;
+}
+
+.about .info .technologies {
+  overflow: hidden;
+  margin: 0 1.25rem;
+}
+
+.about .info .technologies div {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+}
+/* end about */
+
+/* start my-skills */
+.my-skills {
+  padding-block: 1.875rem;
+  overflow: hidden;
+}
+.my-skills .skills,
+.my-skills .progress {
+  width: 50%;
+  float: left;
+}
+/* end my-skills */
+
+/* start resume */
+.resume {
+  padding-block: 1.875rem;
+  background-color: var(--resume-bg-color);
+  text-align: center;
+}
+/* end resume */
+
+/* start my-education */
+.my-education {
+  padding-block: 1.875rem;
+  overflow: hidden;
+}
+.my-education .mainEducation,
+.my-education .experience {
+  width: 50%;
+  float: left;
+}
+/* end my-skills */
+
+/* start testimonials */
+.testimonials {
+  padding-block: 1.875rem;
+  background-color: var(--resume-bg-color);
+  text-align: center;
+}
+/* end testimonials */
+
+/* start portfolio */
+.portfolio {
+  padding-block: 1.875rem;
+  text-align: center;
+}
+
+.portfolio .ourWorks {
+  overflow: hidden;
+  padding-block: 1.875rem;
+}
+.portfolio .ourWorks div {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 0.625rem;
+}
+/* end portfolio */
+
+/* start contact */
+.contact {
+  padding-block: 1.875rem;
+  background-color: var(--contact-bg-color);
+  overflow: hidden;
+}
+.contact h2 {
+  color: var(--color-white);
+}
+.contact p {
+  color: var(--secondary-color);
+}
+
+.contact .info,
+.contact .form {
+  width: 50%;
+  float: left;
+}
+/* end contact */
+
+/* start footer */
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+}
+/* end footer */
