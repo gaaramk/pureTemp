@@ -1,6 +1,6 @@
 /* start genral css */
 :root {
-  --body-bg-color: #888;
+  --paragraph-color: #444;
   --nav-bg-color: #252f31;
   --resume-bg-color: #f2f2f2;
   --contact-bg-color: #252f31;
@@ -8,10 +8,12 @@
   --color-white: #fff;
   --main-color: #2ecc71;
   --secondary-color: #6a6e71;
+  --heade-color: #555;
+  --skill-bg-color: #f2f2f2;
 }
 
 body {
-  background-color: var(--body-bg-color);
+  /* background-color: var(--body-bg-color); */
 }
 
 .container {
@@ -27,12 +29,43 @@ img {
   max-width: 100%;
 }
 
+span {
+  color: var(--main-color);
+}
+
 /* end genral css */
 
 /* start header */
 .header .slider {
+  height: 50rem;
   background-color: var(--main-color);
-  height: 600px;
+  background-image: url("../images/home.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header .slider .intro {
+  padding-top: 25rem;
+  text-align: center;
+  color: var(--color-white);
+}
+.header .slider .intro h2 {
+  margin: 0 auto;
+  padding-block: 0.3125rem;
+  font-size: 3.125rem;
+  width: 37.5rem;
+  border-top: 0.1875rem solid var(--color-white);
+  border-bottom: 0.1875rem solid var(--color-white);
+  text-transform: capitalize;
+}
+.header .slider .intro button {
+  margin-top: 1.875rem;
+  font-size: 1.25rem;
+  border-color: var(--color-white);
+}
+.header .slider .intro button:hover {
+  border-color: var(--main-color);
 }
 
 .header .navigation {
@@ -57,22 +90,37 @@ img {
   float: left;
   padding: 10px;
 }
+
+.header .navigation ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .navigation ul li.active a,
+.header .navigation ul li a:hover {
+  color: var(--main-color);
+}
 /* end header */
 
 /* start features */
 .features {
   overflow: hidden;
-  text-align: center;
-  padding-block: 1.875rem;
+  padding-block: 3.125rem;
 }
 .features .feat {
   float: left;
   width: 33.3333%;
-  height: 150px;
-  background-color: #ddd; /* for layout only */
 }
 .features .feat h2 {
   text-transform: uppercase;
+}
+.features .feat p {
+  text-align: justify;
+  padding: 0 1.5625rem 0 0;
 }
 /* end features */
 
@@ -89,22 +137,52 @@ img {
   float: left;
   width: 60%;
 }
+.about .info h2 {
+  margin: 40px 0 20px 40px;
+  text-transform: uppercase;
+}
+.about .info > p {
+  margin: 0 0 10px 40px;
+  text-align: justify;
+}
 
 .about .info .technologies {
   overflow: hidden;
-  margin: 0 1.25rem;
+  margin: 40px 0 0 40px;
 }
 
-.about .info .technologies div {
+.about .info .technologies .content {
   float: left;
   width: 50%;
-  margin-bottom: 10px;
+  min-height: 100px;
+}
+
+.about .info .technologies .content .icon {
+  float: left;
+  width: 10%;
+  margin-right: 5%;
+}
+
+.about .info .technologies .content .icon img {
+  margin: 10px 10px 0 0;
+}
+
+.about .info .technologies .content .text {
+  float: left;
+  width: 85%;
+}
+.about .info .technologies .content .text h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.about .info .technologies .content .text p {
+  margin-top: 0;
 }
 /* end about */
 
 /* start my-skills */
 .my-skills {
-  padding-block: 1.875rem;
+  padding-block: 3.125rem;
   overflow: hidden;
 }
 .my-skills .skills,
@@ -112,13 +190,61 @@ img {
   width: 50%;
   float: left;
 }
+.my-skills .skills h2 {
+  margin: 1.5625rem 0 1.25rem 2.5rem;
+  text-transform: uppercase;
+}
+.my-skills .skills p {
+  margin: 0 0 0.625rem 2.5rem;
+}
+.my-skills .skills button {
+  margin: 1.25rem 0 0 2.5rem;
+}
+
+.my-skills .progress .skill {
+  margin-left: 3.125rem;
+}
+.my-skills .progress .skill h3 {
+  text-transform: uppercase;
+}
+.my-skills .progress .skill div {
+  background-color: var(--skill-bg-color);
+  height: 1.25rem;
+}
+.my-skills .progress .skill div span {
+  background-color: var(--main-color);
+  color: var(--contact-bg-color);
+  font-weight: bold;
+  display: block;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: right;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+}
 /* end my-skills */
 
 /* start resume */
 .resume {
-  padding-block: 1.875rem;
+  padding-block: 3.125rem;
   background-color: var(--resume-bg-color);
   text-align: center;
+}
+
+.resume h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resume p {
+  padding: 0 3.5rem;
+}
+
+.resume button {
+  margin-top: 1.5625rem;
 }
 /* end resume */
 
@@ -187,3 +313,35 @@ img {
   text-align: center;
 }
 /* end footer */
+
+/* start my framework */
+.myButton {
+  background: none;
+  font-weight: bold;
+  border: 3px solid var(--main-color);
+  padding: 10px 30px;
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-transform: capitalize;
+}
+
+.myButton:hover {
+  color: var(--color-white);
+  background-color: var(--main-color);
+}
+
+.myParagraph {
+  line-height: 1.8;
+  color: var(--paragraph-color);
+}
+/* end my framework */
