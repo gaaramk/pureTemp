@@ -297,4 +297,36 @@ span {color: var(--main-color);}
 .p-block {padding-block: 3.125rem;}
 .over-hide {overflow: hidden;}
 /* end my framework */
-/* 512 line */
+
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .container { width: 95%; }
+  .features .feat { width: 50%; }
+  .about .image, .about .info { width: 100%; }
+  .my-skills .skills, .my-skills .progress { width: 100%; }
+  .my-education .mainEducation, .my-education .experience { width: 100%; margin-right: 0; }
+  .contact .info, .contact .form { width: 100%; }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .header .slider { height: 30rem; }
+  .header .slider .intro { padding-top: 15rem; }
+  .header .slider .intro h2 { font-size: 2rem; width: auto; }
+  .features .feat { width: 100%; }
+  .portfolio .ourWorks > div { width: 100%; }
+  .contact h2, .contact p { margin-left: 1rem; }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .header .slider { height: 20rem; }
+  .header .slider .intro { padding-top: 10rem; }
+  .header .slider .intro h2 { font-size: 1.5rem; }
+  .portfolio p { width: 100%; }
+  .footer { text-align: center; }
+  .footer ul li { margin: 5px 0; }
+}
